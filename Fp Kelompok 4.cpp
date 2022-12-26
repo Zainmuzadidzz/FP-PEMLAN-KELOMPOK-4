@@ -360,6 +360,7 @@ int main(){
 		if(pilihan > 0 && pilihan < 8){
 		switch(pilihan){
 			case 1 :
+			print(nasabah, n);
 			break;
 
 			case 2 :
@@ -369,10 +370,12 @@ int main(){
 
 			case 3 :
 			SortingNama();
+			print(nasabah, n);
 			goto choice;
 			break;
 
 			case 4 :
+			print(nasabah, n);
 			break;
 
 			case 5 :
