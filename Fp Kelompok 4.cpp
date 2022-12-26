@@ -233,7 +233,7 @@ void SearchNama(){
 	}
 }
 
-void print(data nasabah[], int n){
+void print(){
 	cout << " \t\tData Nasabah Bank " << endl;
 	cout << " ==================================================== " << endl;
 
@@ -241,7 +241,7 @@ void print(data nasabah[], int n){
 	cout << "=========================================================================================================================================" << endl;
 	cout << "|                Nama                |                Alamat                |          No. HP          |          No. Rekening          | " << endl;
 	cout << "=========================================================================================================================================" << endl;
-	for(int j = 0; j < n; j++)
+	for(int j = 0; j < jum; j++)
 	{
 		cout << "| " << setiosflags(ios::left) << setw(35) << nasabah[j].nama << "|"; 
 		cout << " " << setiosflags(ios::left) << setw(37) << nasabah[j].alamat << "|"; 
@@ -360,7 +360,7 @@ int main(){
 		if(pilihan > 0 && pilihan < 8){
 		switch(pilihan){
 			case 1 :
-			print(nasabah, n);
+			print();
 			break;
 
 			case 2 :
@@ -370,12 +370,10 @@ int main(){
 
 			case 3 :
 			SortingNama();
-			print(nasabah, n);
 			goto choice;
 			break;
 
 			case 4 :
-			print(nasabah, n);
 			break;
 
 			case 5 :
